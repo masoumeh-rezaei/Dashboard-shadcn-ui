@@ -24,16 +24,10 @@ const formSchema = z.object({
     city:z.string().min(2),
 
 })
-const EditUser=()=>{
+const AddUser=()=>{
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
-        defaultValues: {
-            fullName: "Masoomeh Rezaei",
-            email: 'masy@gmail.com',
-            phone: '09106765667',
-            address: 'Iran, Tehran',
-            city: 'Tehran'
-        },
+
     })
     return(
         <div>
@@ -118,4 +112,4 @@ const EditUser=()=>{
         </div>
     )
 }
-export default EditUser
+export default AddUser

@@ -89,6 +89,18 @@ const SingleUserPage=()=>{
                             </HoverCard>
                         </div>
                     </div>
+                    {/*user card container*/}
+                    <div className={'bg-primary-foreground p-4 rounded-lg space-y-2'}>
+                        <div className={'flex items-center gap-2'}>
+                            <Avatar className={'size-9'}>
+                                <AvatarImage src={'https://avatars.githubusercontent.com/u/1486366'}/>
+                                <AvatarFallback>MR</AvatarFallback>
+                            </Avatar>
+                            <h1 className={'text-xl font-semibold'}>Masoomeh Rezaei</h1>
+                        </div>
+                        <p className={'text-sm text-muted-foreground'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eveniet exercitationem laudantium omnis perspiciatis placeat quia ullam, veritatis! Eos laboriosam, magni? A doloribus excepturi inventore ipsa mollitia, quaerat quam sapiente.
+                        </p>
+                    </div>
                     {/*info  content*/}
                     <div className={'bg-primary-foreground p-4 rounded-lg'}>
                         <div className={'flex items-center justify-between '}>
@@ -106,8 +118,8 @@ const SingleUserPage=()=>{
                                 <Progress value={83} />
                             </div>
                             <div className={'flex items-center gap-2'}>
-                                <span className={'font-bold'}>Username : </span>
-                                <span>Masy.Rezaei</span>
+                                <span className={'font-bold'}>Full name : </span>
+                                <span>Masy Rezaei</span>
                             </div> <div className={'flex items-center gap-2'}>
                                 <span className={'font-bold'}>Email : </span>
                                 <span>Masy.Rezaei@gmail.com</span>
@@ -115,36 +127,21 @@ const SingleUserPage=()=>{
                                 <span className={'font-bold'}>Phone : </span>
                                 <span>09106765667</span>
                             </div> <div className={'flex items-center gap-2'}>
-                                <span className={'font-bold'}>Location : </span>
+                                <span className={'font-bold'}>Address : </span>
                                 <span>Iran , Tehran</span>
                             </div> <div className={'flex items-center gap-2'}>
-                                <span className={'font-bold'}>Role : </span>
-                                <Badge>Admin</Badge>
+                                <span className={'font-bold'}>city : </span>
+                            <span>Tehran</span>
                             </div>
                         </div>
                         <p className={'text-sm text-muted-foreground mt-3'}>Joined on 2025.05.05</p>
                     </div>
                     {/*cartList*/}
-                    <div className={'bg-primary-foreground p-4 rounded-lg'}>
-                        <CardList title="recent transactions">
 
-                        </CardList>
-                    </div>
                 </div>
                 {/*right*/}
                 <div className={'w-ful xl:w-2/3 space-y-6'}>
-                    {/*user card container*/}
-                    <div className={'bg-primary-foreground p-4 rounded-lg space-y-2'}>
-                        <div className={'flex items-center gap-2'}>
-                            <Avatar className={'size-9'}>
-                                <AvatarImage src={'https://avatars.githubusercontent.com/u/1486366'}/>
-                                <AvatarFallback>MR</AvatarFallback>
-                            </Avatar>
-                            <h1 className={'text-xl font-semibold'}>Masoomeh Rezaei</h1>
-                        </div>
-                        <p className={'text-sm text-muted-foreground'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eveniet exercitationem laudantium omnis perspiciatis placeat quia ullam, veritatis! Eos laboriosam, magni? A doloribus excepturi inventore ipsa mollitia, quaerat quam sapiente.
-                        </p>
-                    </div>
+
                     {/*chart container*/}
                     <div className={'bg-primary-foreground p-4 rounded-lg'}>
                         <h1 className={'text-xl font-semibold'}>User Activity</h1>
