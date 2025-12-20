@@ -1,6 +1,5 @@
 'use client'
 import {
-    type ChartConfig,
     ChartContainer,
     ChartLegend,
     ChartLegendContent,
@@ -8,6 +7,7 @@ import {
     ChartTooltipContent
 } from "@/components/ui/chart"
 import {Bar, BarChart, CartesianGrid, XAxis} from "recharts";
+import type { ChartConfig } from "@/components/ui/chart"
 
 
 const chartData = [
