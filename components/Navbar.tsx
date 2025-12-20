@@ -23,7 +23,7 @@ const Navbar=()=>{
             <SidebarTrigger/>
             {/*right*/}
             <div className={'flex items-center gap-4'}>
-                <Link href={'/'}>Dashboard</Link>
+                <Link href={'/apps/e-commerce-store/admin/Dashboard-shadcn-ui/public'}>Dashboard</Link>
                 {/*user menu*/}
                 {/*theme menu*/}
                 <DropdownMenu>
