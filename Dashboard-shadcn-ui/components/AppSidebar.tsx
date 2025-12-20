@@ -76,7 +76,7 @@ const AppSidebar = () => {
                 <SidebarMenu>
                     <SidebarMenuItem>
                         <SidebarMenuButton asChild>
-                            <Link href="/apps/e-commerce-storeashboard-shadcn-ui/public">
+                            <Link href="/">
                                 <Image src="/logo.svg" alt="logo" width={20} height={20} />
                                 <span>Lama Dev</span>
                             </Link>
