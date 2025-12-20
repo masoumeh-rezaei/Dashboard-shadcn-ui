@@ -4,100 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb6327e0-3527-4325-b16d-a0d937503edd" name="Changes" comment="update ui">
+    <list default="true" id="fb6327e0-3527-4325-b16d-a0d937503edd" name="Changes" comment="swap the root folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/payment/columns.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/payment/data-table.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/payment/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/products/columns.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/products/data-table.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/products/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/users/[id]/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/users/columns.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/users/data-table.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/app/users/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AddCategory.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AddOrder.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AddProduct.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AddUser.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AppAreaChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AppBarChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AppLineChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AppPieChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/AppSidebar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/CardList.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/EditUser.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/Navbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/Providers/LayoutWrapper.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/Providers/ThemeProvider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/TablePagination.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/TodoList.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/Avator.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/Tooltip.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/badge.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/breadcrumb.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/calendar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/chart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/checkbox.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/collapsible.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/dropdown-menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/form.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/hover-card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/input.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/label.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/popover.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/progress.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/scroll-area.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/select.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/separator.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/sheet.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/sidebar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/skeleton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/table.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/textarea.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/components/ui/tree-view.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/eslint.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/hooks/use-mobile.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/lib/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/next.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/postcss.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/1g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/1gr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/1p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/2g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/2gr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/3b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/3bl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/3gr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/4p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/4w.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/5bl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/5o.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/5r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/6g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/6w.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/7g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/7p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/8b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/products/8gr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/public/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard-shadcn-ui/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/chart.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +48,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\masoume\\WebstormProjects\\panel-ui-shadcn\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -156,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766216006022</updated>
-      <workItem from="1766216008034" duration="670000" />
+      <workItem from="1766216008034" duration="1734000" />
     </task>
     <task id="LOCAL-00001" summary="update ui">
       <option name="closed" value="true" />
@@ -166,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766216189503</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="swap the root folder">
+      <option name="closed" value="true" />
+      <created>1766216834494</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766216834494</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="update ui" />
+    <MESSAGE value="swap the root folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="swap the root folder" />
   </component>
 </project>
