@@ -44,7 +44,7 @@ const AppBarChart=()=>{
                         axisLine={false}
                     />
                     <ChartTooltip content={<ChartTooltipContent/>}/>
-                    <ChartLegend content={<ChartLegendContent/>}/>
+                    <ChartLegend content={<ChartLegendContent payload={undefined}/>}/>
                     <Bar dataKey="total" fill="var(--color-total)" radius={4} />
                     <Bar dataKey="successful" fill="var(--color-successful)" radius={4} />
                 </BarChart>

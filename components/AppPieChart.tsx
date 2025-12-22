@@ -1,5 +1,5 @@
 'use client'
-import {ChartContainer, ChartTooltip, ChartTooltipContent} from "@/components/ui/chart";
+import {ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent} from "@/components/ui/chart";
 import {Label, Pie, PieChart} from "recharts";
 import {TrendingUp} from "lucide-react";
 
