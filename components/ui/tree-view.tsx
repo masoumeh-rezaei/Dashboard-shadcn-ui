@@ -180,10 +180,10 @@ const TreeItem = React.forwardRef<HTMLDivElement, TreeItemProps>(
             draggedItem,
             renderItem,
             level,
-            onSelectChange,
-            expandAll,
-            initialSelectedItemId,
-            onDocumentDrag,
+            onSelectChange: _onSelectChange,
+            expandAll: _expandAll,
+            initialSelectedItemId: _initialSelectedItemId,
+            onDocumentDrag: _onDocumentDrag,
             ...props
         },
         ref
@@ -299,12 +299,13 @@ const TreeNode = ({
         >
             <AccordionPrimitive.Item value={item.id}>
                 <AccordionTrigger
-                    className={`cn(
+                    className={cn(
                         treeVariants(),
                         isSelected && selectedTreeVariants(),
                         isDragOver && dragOverVariants(),
-                        item.className
-                    ) border-2 max-w-[100px]` }
+                        item.className,
+                        "border-2 max-w-[100px]"
+                    )}
                     onClick={() => {
                         handleSelectChange(item)
                         item.onClick?.()

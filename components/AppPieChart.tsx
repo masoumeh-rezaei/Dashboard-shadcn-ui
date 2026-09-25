@@ -44,6 +44,7 @@ const AppPieChart=()=>{
     );
 
 
+
     return(
         <div>
             <h1 className={'text-lg font-medium mb-0'}>Total Revenue</h1>

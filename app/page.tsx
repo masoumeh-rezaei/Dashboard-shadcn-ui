@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { TreeView, TreeDataItem } from '@/components/ui/tree-view'
 import AppBarChart from "@/components/AppBarChart";
 import AppAreaChart from "@/components/AppAreaChart";
 import AppPieChart from "@/components/AppPieChart";

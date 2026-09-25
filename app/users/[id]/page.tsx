@@ -15,13 +15,11 @@ import {
     Sheet,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import CardList from "@/components/CardList";
 
 import {BadgeCheck, Candy, Car, Shield} from "lucide-react";
 
 import {Progress} from "@/components/ui/progress";
 import {Button} from "@/components/ui/button";
-import {Badge} from "@/components/ui/badge";
 import EditUser from "@/components/EditUser";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/Avator";
 import AppLineChart from "@/components/AppLineChart";

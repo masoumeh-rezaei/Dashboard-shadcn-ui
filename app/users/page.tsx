@@ -1,5 +1,6 @@
 import { User, columns } from "./columns";
 import { DataTable } from "./data-table";
+import PostsList from "@/components/articles";
 
 const getData = async (): Promise<User[]> => {
     return [
@@ -266,6 +267,7 @@ const UsersPage = async () => {
                 <h1 className="font-semibold">All Users</h1>
             </div>
             <DataTable columns={columns} data={data} />
+            <PostsList/>
         </div>
     );
 };

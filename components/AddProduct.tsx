@@ -30,6 +30,7 @@ import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import { Checkbox } from "./ui/checkbox";
 import { ScrollArea } from "./ui/scroll-area";
+import { useState } from "react";
 
 const categories = [
     "T-shirts",
@@ -90,13 +91,30 @@ const formSchema = z.object({
     category: z.enum(categories),
     sizes: z.array(z.enum(sizes)),
     colors: z.array(z.enum(colors)),
-    images: z.record(z.enum(colors), z.string()),
+    images: z.record(z.string(), z.custom<File>()).optional(),
 });
 
 const AddProduct = () => {
+    const [isSubmitted, setIsSubmitted] = useState(false);
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
+        defaultValues: {
+            name: "",
+            shortDescription: "",
+            description: "",
+            price: 0,
+            sizes: [],
+            colors: [],
+            images: {},
+        },
     });
+
+    const onSubmit = (values: z.infer<typeof formSchema>) => {
+        // There is no products API in this demo yet. Keep the validated data
+        // available to the parent UI instead of triggering a native page submit.
+        window.dispatchEvent(new CustomEvent("product:create", { detail: values }));
+        setIsSubmitted(true);
+    };
     return (
         <SheetContent>
             <ScrollArea className="h-screen">
@@ -104,7 +122,7 @@ const AddProduct = () => {
                     <SheetTitle className="mb-4">Add Product</SheetTitle>
                     <SheetDescription asChild>
                         <Form {...form}>
-                            <form className="space-y-8">
+                            <form className="space-y-8" onSubmit={form.handleSubmit(onSubmit)} noValidate>
                                 <FormField
                                     control={form.control}
                                     name="name"
@@ -160,7 +178,12 @@ const AddProduct = () => {
                                         <FormItem>
                                             <FormLabel>Price</FormLabel>
                                             <FormControl>
-                                                <Input type="number" {...field} />
+                                                <Input
+                                                    type="number"
+                                                    min="1"
+                                                    {...field}
+                                                    onChange={(event) => field.onChange(event.target.valueAsNumber)}
+                                                />
                                             </FormControl>
                                             <FormDescription>
                                                 Enter the price of the product.
@@ -176,7 +199,7 @@ const AddProduct = () => {
                                         <FormItem>
                                             <FormLabel>Category</FormLabel>
                                             <FormControl>
-                                                <Select>
+                                                <Select onValueChange={field.onChange} value={field.value}>
                                                     <SelectTrigger>
                                                         <SelectValue placeholder="Select a category" />
                                                     </SelectTrigger>
@@ -207,7 +230,7 @@ const AddProduct = () => {
                                                     {sizes.map((size) => (
                                                         <div className="flex items-center gap-2" key={size}>
                                                             <Checkbox
-                                                                id="size"
+                                                                id={`size-${size}`}
                                                                 checked={field.value?.includes(size)}
                                                                 onCheckedChange={(checked) => {
                                                                     const currentValues = field.value || [];
@@ -220,7 +243,7 @@ const AddProduct = () => {
                                                                     }
                                                                 }}
                                                             />
-                                                            <label htmlFor="size" className="text-xs">
+                                                            <label htmlFor={`size-${size}`} className="text-xs">
                                                                 {size}
                                                             </label>
                                                         </div>
@@ -249,7 +272,7 @@ const AddProduct = () => {
                                                                 key={color}
                                                             >
                                                                 <Checkbox
-                                                                    id="color"
+                                                                    id={`color-${color}`}
                                                                     checked={field.value?.includes(color)}
                                                                     onCheckedChange={(checked) => {
                                                                         const currentValues = field.value || [];
@@ -263,7 +286,7 @@ const AddProduct = () => {
                                                                     }}
                                                                 />
                                                                 <label
-                                                                    htmlFor="color"
+                                                                    htmlFor={`color-${color}`}
                                                                     className="text-xs flex items-center gap-2"
                                                                 >
                                                                     <div
@@ -285,7 +308,17 @@ const AddProduct = () => {
                                                                         style={{ backgroundColor: color }}
                                                                     />
                                                                     <span className="text-sm min-w-[60px]">{color}</span>
-                                                                    <Input type="file" accept="image/*" />
+                                                                    <Input
+                                                                        type="file"
+                                                                        accept="image/*"
+                                                                        onChange={(event) => {
+                                                                            const file = event.target.files?.[0];
+                                                                            const images = form.getValues("images") ?? {};
+                                                                            if (file) {
+                                                                                form.setValue("images", { ...images, [color]: file });
+                                                                            }
+                                                                        }}
+                                                                    />
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -300,6 +333,11 @@ const AddProduct = () => {
                                     )}
                                 />
                                 <Button type="submit">Submit</Button>
+                                {isSubmitted && (
+                                    <p className="text-sm text-green-600" role="status">
+                                        Product data was validated successfully.
+                                    </p>
+                                )}
                             </form>
                         </Form>
                     </SheetDescription>

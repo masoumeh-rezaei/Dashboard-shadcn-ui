@@ -104,8 +104,6 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
-// @ts-ignore
-// @ts-ignore
 function ChartTooltipContent({
                                  active,
                                  payload,
@@ -120,7 +118,10 @@ function ChartTooltipContent({
                                  color,
                                  nameKey,
                                  labelKey,
-                             }: React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
+                             }: Partial<RechartsPrimitive.TooltipContentProps<
+    number | string | ReadonlyArray<number | string>,
+    number | string
+>> &
     React.ComponentProps<"div"> & {
     hideLabel?: boolean
     hideIndicator?: boolean
@@ -172,7 +173,6 @@ function ChartTooltipContent({
 
     const nestLabel = payload.length === 1 && indicator !== "dot"
 
-    // @ts-ignore
     return (
         <div
             className={cn(
@@ -183,7 +183,7 @@ function ChartTooltipContent({
             {!nestLabel ? tooltipLabel : null}
             <div className="grid gap-1.5">
                 {payload
-                    .filter((item: { type: string }) => item.type !== "none")
+                    .filter((item) => item.type !== "none")
                     .map((item, index) => {
                         const key = `${nameKey || item.name || item.dataKey || "value"}`
                         const itemConfig = getPayloadConfigFromPayload(config, item, key)
@@ -255,7 +255,6 @@ function ChartTooltipContent({
 
 const ChartLegend = RechartsPrimitive.Legend
 
-// @ts-ignore
 function ChartLegendContent({
                                 className,
                                 hideIcon = false,
@@ -263,18 +262,18 @@ function ChartLegendContent({
                                 verticalAlign = "bottom",
                                 nameKey,
                             }: React.ComponentProps<"div"> &
-    Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
+    {
+    payload?: ReadonlyArray<RechartsPrimitive.LegendPayload>
+    verticalAlign?: "top" | "middle" | "bottom"
     hideIcon?: boolean
     nameKey?: string
 }) {
     const { config } = useChart()
 
-    // @ts-ignore
     if (!payload?.length) {
         return null
     }
 
-    // @ts-ignore
     return (
         <div
             className={cn(
