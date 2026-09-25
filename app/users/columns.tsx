@@ -13,8 +13,8 @@ import {
 import { cn } from "@/lib/utils";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import { Avatar, AvatarFallback } from "@/components/ui/Avator";
 
 export type User = {
     id: string;
@@ -48,15 +48,17 @@ export const columns: ColumnDef<User>[] = [
         header: "Avatar",
         cell: ({ row }) => {
             const user = row.original;
+            const initials = user.fullName
+                .split(" ")
+                .slice(0, 2)
+                .map((part) => part[0])
+                .join("")
+                .toUpperCase();
+
             return (
-                <div className="w-9 h-9 relative">
-                    <Image
-                        src={user.avatar}
-                        alt={user.fullName}
-                        fill
-                        className="rounded-full object-cover"
-                    />
-                </div>
+                <Avatar className="size-9">
+                    <AvatarFallback aria-label={user.fullName}>{initials}</AvatarFallback>
+                </Avatar>
             );
         },
     },
